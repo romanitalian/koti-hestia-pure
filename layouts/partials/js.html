@@ -26,9 +26,9 @@
 
 {{ if .Site.Params.yandexMetrika }}
 <script type="text/javascript" >
-    var yaCounterFunctionName = 'yaCounter' + '{{.Site.Params.yandexMetrika}}';
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
+          var yaCounterFunctionName = 'yaCounter' + '{{.Site.Params.yandexMetrika}}';
             try {
                 w.yaCounterFunctionName = new Ya.Metrika({
                     id:{{.Site.Params.yandexMetrika}},
